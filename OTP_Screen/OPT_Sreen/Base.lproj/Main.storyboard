@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OPT_Sreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the opt that you receieved on your phone number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMj-zs-zAj">
+                                <rect key="frame" x="10" y="144" width="394" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btb-2l-8Ju">
+                                <rect key="frame" x="10" y="235" width="394" height="70"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbL-Er-73P">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="UJg-00-zXn"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmc-sU-N02">
+                                        <rect key="frame" x="303" y="0.0" width="91" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="zlk-Lm-0I3"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zy9-S1-pIh">
+                                        <rect key="frame" x="203" y="0.0" width="91" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Vl9-3v-SIZ"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfl-A0-JWm">
+                                        <rect key="frame" x="100" y="0.0" width="91" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="cjJ-zu-KkW"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zy9-S1-pIh" firstAttribute="width" secondItem="pmc-sU-N02" secondAttribute="width" id="09R-bl-P55"/>
+                                    <constraint firstAttribute="bottom" secondItem="VbL-Er-73P" secondAttribute="bottom" id="4cU-aA-cjD"/>
+                                    <constraint firstItem="pmc-sU-N02" firstAttribute="leading" secondItem="zy9-S1-pIh" secondAttribute="trailing" constant="9" id="5tY-Bw-zUj"/>
+                                    <constraint firstAttribute="height" constant="70" id="6ln-Sr-WaA"/>
+                                    <constraint firstItem="gfl-A0-JWm" firstAttribute="leading" secondItem="VbL-Er-73P" secondAttribute="trailing" constant="9" id="7pO-o5-Nv2"/>
+                                    <constraint firstAttribute="bottom" secondItem="zy9-S1-pIh" secondAttribute="bottom" id="BDn-qN-pNc"/>
+                                    <constraint firstAttribute="trailing" secondItem="pmc-sU-N02" secondAttribute="trailing" id="CSo-Hp-Ak2"/>
+                                    <constraint firstItem="VbL-Er-73P" firstAttribute="width" secondItem="btb-2l-8Ju" secondAttribute="width" multiplier="0.3" constant="-27.199999999999989" id="EwX-b2-VPI"/>
+                                    <constraint firstItem="VbL-Er-73P" firstAttribute="top" secondItem="btb-2l-8Ju" secondAttribute="top" id="F6M-Wx-Lfe"/>
+                                    <constraint firstItem="zy9-S1-pIh" firstAttribute="leading" secondItem="gfl-A0-JWm" secondAttribute="trailing" constant="12" id="OLK-j5-CjX"/>
+                                    <constraint firstAttribute="bottom" secondItem="pmc-sU-N02" secondAttribute="bottom" id="QP6-m2-RKp"/>
+                                    <constraint firstItem="VbL-Er-73P" firstAttribute="leading" secondItem="btb-2l-8Ju" secondAttribute="leading" id="Uhf-I2-kDD"/>
+                                    <constraint firstItem="pmc-sU-N02" firstAttribute="top" secondItem="btb-2l-8Ju" secondAttribute="top" id="bVM-ew-Pvs"/>
+                                    <constraint firstAttribute="bottom" secondItem="gfl-A0-JWm" secondAttribute="bottom" id="dYr-rf-sMH"/>
+                                    <constraint firstItem="zy9-S1-pIh" firstAttribute="top" secondItem="btb-2l-8Ju" secondAttribute="top" id="g2U-9h-5RK"/>
+                                    <constraint firstItem="pmc-sU-N02" firstAttribute="width" secondItem="VbL-Er-73P" secondAttribute="width" id="j1U-fK-Seo"/>
+                                    <constraint firstItem="gfl-A0-JWm" firstAttribute="top" secondItem="btb-2l-8Ju" secondAttribute="top" id="qPb-ER-aNl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pir-ys-bvI">
+                                <rect key="frame" x="10" y="335" width="394" height="55"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hDM-9R-aYA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="SUBMIT OTP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitOtpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DlM-Yj-0ck"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pir-ys-bvI" firstAttribute="top" secondItem="btb-2l-8Ju" secondAttribute="bottom" constant="30" id="A2a-lN-qaL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HMj-zs-zAj" secondAttribute="trailing" constant="10" id="AQK-om-w4F"/>
+                            <constraint firstItem="btb-2l-8Ju" firstAttribute="top" secondItem="HMj-zs-zAj" secondAttribute="bottom" constant="50" id="FVC-C5-q19"/>
+                            <constraint firstItem="HMj-zs-zAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Mpf-k4-o1V"/>
+                            <constraint firstItem="btb-2l-8Ju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Q63-qZ-vl5"/>
+                            <constraint firstItem="HMj-zs-zAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="VCQ-iF-Uu3"/>
+                            <constraint firstItem="pir-ys-bvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jFL-wq-7zY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btb-2l-8Ju" secondAttribute="trailing" constant="10" id="qwH-tB-eUO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pir-ys-bvI" secondAttribute="trailing" constant="10" id="sMd-1y-iss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textOTP1" destination="VbL-Er-73P" id="Tow-Eb-TMt"/>
+                        <outlet property="textOTP2" destination="gfl-A0-JWm" id="L2b-aI-q4X"/>
+                        <outlet property="textOTP3" destination="zy9-S1-pIh" id="eDC-nt-fRz"/>
+                        <outlet property="textOTP4" destination="pmc-sU-N02" id="Sa2-DF-lVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>
